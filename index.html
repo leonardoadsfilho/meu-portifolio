@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-hamburguer">
+            <label class="menu-hamburguer" for="menu-hamburguer">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        <input type="checkbox" id="menu-hamburguer">
+        <div class="nav-list">
+            <a class="list-item" href="#profile">perfil</a>
+            <a class="list-item" href="#projects">projetos</a>
+            <a class="list-item" href="#experiences">experiência</a>
+            <a class="list-item" href="#repositories">repositórios github</a>
+            <a class="list-item" href="#recommendations">conteúdo</a>
+            <a class="list-item" href="./search.html">
+                <i class="fa-solid fa-circle-right"></i>
+            </a>
+        </div>
+
+        <div class="nav-search">
+            <i class="fa-solid fa-magnifying-glass search-magnifying-glass"></i>
+            <input class="search-field" type="text" placeholder="Pesquisar">
+            <i class="fa-regular fa-circle-xmark search-close"></i>
+        </div>
+    </nav>
+
+    <div id="home-page" class="home-page">
+        <header class="container container-profile">
+
+            <div class="area area-profile">
+                <div class="profile-image-area">
+                    <img id="profile-image" class="profile-image" src="./img/foto_de_perfil.png" alt="" srcset="">
+                </div>
+                <div class="profile-content-area">
+                    <div class="profile-header">
+                        <div class="profile-name">
+                            <h1 id="profile">Leonardo Augusto de Souza Filho</h1>
+                        </div>
+                        <div id="profile-objectives" class="profile-objectives">
+                            <p>
+                                <b>Objetivos: </b> Utilizar dos meus conhecimentos para contribuir
+                                com o desenvolvimento da sociedade. Trabalhar em equipe. Resolver problemas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <p>Redes sociais</p>
+                        <div id="social-icons" class="social-icons">
+                            <i class="fa-brands fa-whatsapp" onclick="open_url('https://api.whatsapp.com/send?phone=5533987391295&text=Leonardo%20Filho')"></i>
+                            <i class="fa-brands fa-linkedin" onclick="open_url('https://www.linkedin.com/in/leonardoadsfilho/')"></i>
+                            <i class="fa-brands fa-instagram" onclick="open_url('https://www.instagram.com/leo_augusto_filho/')"></i>
+                        </div>
+                    </div>
+                </div>
+        </header>
+    
+        <div class="container container-projects">
+            <div class="area">
+                <div class="area-nav">
+                    <div class="area-name">
+                        <h2 id="projects">Projetos</h2>
+                    </div>
+    
+                    <select id="projects-nav" class="projects-nav-categories" title="Categorias:">
+                        <option value="" selected>TODOS</option>
+                        <option value="">Web Sites</option>
+                        <option value="">Arte Gráfica</option>
+                        <option value="">Podcast</option>
+                    </select>
+                </div>
+                <!--end projects area-nav-->
+    
+                <div class="projects">
+                    <div class="project-card">
+                        <img class="project-image" src="./img/projeto_1.png" alt="">
+                        <div class="project-title">
+                            Controle de Acesso - 2021
+                        </div>
+                    </div>
+                    <!--end projects-card-->
+                    <div class="project-card">
+                        <img class="project-image" src="./img/projeto_2.png" alt="">
+                        <div class="project-title">
+                            Controle de Estoque - 2021
+                        </div>
+                    </div>
+                    <!--end projects-card-->
+                    <div class="project-card">
+                        <img class="project-image" src="./img/projeto_3.jpg" alt="">
+                        <div class="project-title">
+                            Web Game - 2021
+                        </div>
+                    </div>
+                    <!--end projects-card-->
+                    <div class="project-card">
+                        <img class="project-image" src="./img/projeto_4.jpg" alt="">
+                        <div class="project-title">
+                            Api CRUD - 2021
+                        </div>
+                    </div>
+                    <!--end projects-card-->
+                </div>
+                <!--end projects-->
+    
+                <button class="load-more">
+                    <i class="fa-regular fa-plus"></i>
+                    Carregar mais projetos
+                </button>
+            </div>
+        </div>
+    
+        <div class="container container-experiences">
+            <div class="area">
+    
+                <div class="area-nav">
+                    <div class="area-name">
+                        <h3 id="experiences">Experiências</h3>
+                    </div>
+                </div>
+                <!--end experience area-nav-->
+    
+                <div class="experiences">
+    
+                    <div class="experiences-card">
+                        <img class="experience-logo" src="./img/empresa_1.jfif" alt="">
+                        <div class="experience-content">
+                            <div class="experience-title">
+                                Full-Stack
+                            </div>
+                            <div class="experience-description">
+                                Desenvolvimento de Api's, funcionalidas e interações
+                                em conjunto com base de dados para sites e aplicativos.
+                            </div>
+                            <div class="experience-period">
+                                2018-2021
+                            </div>
+                        </div>
+                    </div>
+                    <!--end experiences-card-->
+    
+                    <div class="experiences-card">
+                        <img class="experience-logo" src="./img/empresa_2.png" alt="">
+                        <div class="experience-content">
+                            <div class="experience-title">
+                                Técnico em Informática
+                            </div>
+                            <div class="experience-description">
+                                Manutenção de computadores, instalação de
+                                sistemas, redes.
+                            </div>
+                            <div class="experience-period">
+                                2016 - 2021
+                            </div>
+                        </div>
+                    </div>
+                    <!--end experiences-card-->
+    
+                    <div class="experiences-card">
+                        <img class="experience-logo" src="./img/empresa_3.jpg" alt="">
+                        <div class="experience-content">
+                            <div class="experience-title">
+                                Gerente de Projetos
+                            </div>
+                            <div class="experience-description">
+                                Supervisor de equipe de desenvolvimento web/native,
+                                inovação e gestão de cronograma.
+                            </div>
+                            <div class="experience-period">
+                                2019 - 2021
+                            </div>
+                        </div>
+                    </div>
+                    <!--end experiences-card-->
+                </div>
+                <!--end experiences-->
+    
+                <button class="load-more">
+                    <i class="fa-regular fa-plus"></i>
+                    Carregar mais experiências
+                </button>
+            </div>
+            <!--end area-experiences-->
+        </div>
+    
+        <div class="container container-repositories">
+            <div class="area">
+    
+                <div class="area-nav">
+                    <div class="area-name">
+                        <h4 id="repositories">Repositórios GitHub</h4>
+                    </div>
+                </div>
+                <!--end experience area-nav-->
+    
+                <div id="repositories_cards" class="repositories">
+    
+                    <div class="repository-card">
+                        <div class="repository-logo">
+                            <i class="fa-solid fa-folder"></i>
+                        </div>
+                        <div class="repository-content">
+                            <div class="repository-title">
+                                Api
+                            </div>
+                            <div class="repository-description">
+                                <b>Avaliação:</b> Api para consumo interno para interconectar
+                                interface de clientes e base de dados de dispositivos.
+                            </div>
+                            <div class="repository-period">
+                                20/08/2021 - 30/12/2021
+                            </div>
+                        </div>
+                    </div>
+                    <!--end repositories-card-->
+    
+                    <div class="repository-card">
+                        <div class="repository-logo">
+                            <i class="fa-solid fa-folder"></i>
+                        </div>
+                        <div class="repository-content">
+                            <div class="repository-title">
+                                WebApp
+                            </div>
+                            <div class="repository-description">
+                                <b>Avaliação:</b> Aplicativo responsivo e interativo
+                                com o usuário com uma interface agradável e simpes.
+                            </div>
+                            <div class="repository-period">
+                                20/08/2021 - 30/12/2021
+                            </div>
+                        </div>
+                    </div>
+                    <!--end repositories-card-->
+    
+                    <div class="repository-card">
+                        <div class="repository-logo">
+                            <i class="fa-solid fa-folder"></i>
+                        </div>
+                        <div class="repository-content">
+                            <div class="repository-title">
+                                Sensores
+                            </div>
+                            <div class="repository-description">
+                                <b>Avaliação:</b> Conexão entre os dispositivos utilizando
+                                o protocolo MQTT e a Database de forma eficiente e
+                                genérica.
+                            </div>
+                            <div class="repository-period">
+                                20/08/2021 - 30/12/2021
+                            </div>
+                        </div>
+                    </div>
+                    <!--end repositories-card-->
+                </div>
+                <!--end repositories-->
+    
+                <button class="load-more">
+                    <i class="fa-regular fa-plus"></i>
+                    Carregar mais repositórios
+                </button>
+    
+            </div>
+            <!--end area-repositories-->
+        </div>
+    
+        <div class="container container-recommendations">
+            <div class="area">
+    
+                <div class="area-nav">
+                    <div class="area-name">
+                        <h5 id="recommendations">Recomendação de Conteúdo</h5>
+                    </div>
+                </div>
+                <!--end recomendations area-nav-->
+    
+                <div class="recommendations">
+    
+                    <div class="recommend-card">
+                        <div class="recommend-video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZsqcMXY_ECk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="recommend-description">
+                            Aprendizado de Máquina: Demonstrando dados relacionandos a aprendizado de máquina
+                            com exemplo.
+                        </div>
+                        <div class="recommend-auth">
+                            Autores: Leonardo Augusto de Souza Filho - Ítalo Garcez Carvalho
+                        </div>
+                    </div>
+                    <!--end recommend-card-->
+    
+                    <div class="recommend-card">
+    
+                        <div class="recommend-video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/quHp_PATAKo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="recommend-description">
+                            Eletronico Desenvolvido para Guardar Automaticamente sua Residência:EDGAR.
+                        </div>
+                        <div class="recommend-auth">
+                            Autores: Leonardo Augusto de Souza Filho - Ítalo Garcez Carvalho
+                        </div>
+    
+                    </div>
+                    <!--end recommend-card-->
+    
+                    <div class="recommend-card">
+                        <div class="recommend-video">
+                            <iframe src="https://www.youtube.com/embed/eW4gZLxLZJo" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="recommend-description">
+                            Linguagem de Programação RUST: Explicando um pouco as funcionalidades do
+                            RUST.
+                        </div>
+                        <div class="recommend-auth">
+                            Autores: Leonardo Augusto de Souza Filho - Ítalo Garcez Carvalho
+                        </div>
+                        <!--end recommend-card-->
+                    </div>
+                    <!--end recommendations-->
+    
+                </div>
+                <button class="load-more">
+                    <i class="fa-regular fa-plus"></i>
+                    Carregar mais recomendações
+                </button>
+            </div>
+            <!--end area-recommendations-->
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b>
+            </div>
+            <div class="footer-logo">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
